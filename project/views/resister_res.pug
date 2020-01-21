@@ -1,0 +1,30 @@
+extends layout
+
+block register
+	h4.reg Resiter the restaurant
+	form.sellform(method="POST", action="")
+		input#author(type="hidden", value=name, name="author")
+		.input
+			h4.input_list 업체명
+			input#res_name(type="text", placeholder="강식당", name="res_name")
+		.input
+			h4.input_list 주소
+			input#address(type="text", placeholder="경기도 성남시", name="address")
+		.input
+			h4.input_list 영업시간
+			input#running_time(type="text", placeholder="09:00 ~ 22:00", name="running_time")
+		.input
+			h4.input_list 연락처
+			input#contact(type="text", placeholder="010-1234-5678", name="contact")
+		.input
+			h4.input_list 메인메뉴
+			input#main_dish(type="text", placeholder="김치밥이 피오씁니다.", name="main_dish")
+		.imgbox
+			h4.input_list 이미지
+			label(for="file")
+				.upload UPLOAD
+			input#file(type="file", name="img", onchange="getData()")
+		#data
+		.buttons
+			input#submit_ask(type="submit", value="등록완료")
+			input(type="reset", value="취소")

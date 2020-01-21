@@ -1,0 +1,11 @@
+extends layout
+block content
+	img.res_icon(src="/images/res_icon.png", alt="res_icon")
+	.desc
+		p.sub_title1 REVEL UP
+		p.sub_title2 Restaurant + Level Up : 입맛을 높이다.
+	.account
+		button.google_login(onclick="location.href='/auth/google'", type="submit", style="border: 0; background: transparent")
+			img(src="/images/btn_google_signin.png", alt="submit")
+	
+		

@@ -1,0 +1,25 @@
+extends layout
+
+block book
+	h4.reg Book the restaurant
+	form.sellform(method="POST", action="")
+		input#author(type="hidden", value=name, name="author")
+		.input
+			h4.input_list 예약자
+			input#guest_name(type="text", placeholder="김명성", name="guest_name")
+		.input
+			h4.input_list 연락처
+			input#guest_contact(type="text", placeholder="010-8663-2663", name="guest_contact")
+		.input
+			h4.input_list 이메일
+			input#guest_email(type="text", placeholder="maeng2418@naver.com", name="guest_email")
+		.input
+			h4.input_list 예약 인원
+			input#guest_count(type="text", placeholder="4", name="guest_count")
+		.input
+			h4.input_list 메뉴
+			input#menu(type="text", placeholder="맛초킹", name="menu")
+		input#res_id(type="hidden", name="res_id" value=item)
+		.buttons
+			input#submit_ask(type="submit", value="예약")
+			input(type="reset", value="취소")

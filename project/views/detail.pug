@@ -1,0 +1,20 @@
+extends layout
+block detail
+	h3.detail_title 상세보기
+	.detail_card
+		#detail_image
+		.detail_box
+			h4.detail_list Name :
+				span#detail_name
+			h4.detail_list Address :
+				span#detail_address
+			h4.detail_list Time :
+				span#detail_time
+			h4.detail_list Contact :
+				span#detail_contact
+			h4.detail_list Like :
+				span#detail_like
+			button#book(onclick="book()") 예약하기
+		script(src='/javascripts/detail.js')
+			
+	
