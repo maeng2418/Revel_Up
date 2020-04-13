@@ -2,5 +2,5 @@
 
 # dependencies
 /project/node_modules
-
+/project/routes/index.js
 /project/npm-debug.log*
