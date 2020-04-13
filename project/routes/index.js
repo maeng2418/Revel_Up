@@ -8,7 +8,7 @@ var passport = require('passport');
 var GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
 
 var mongoose = require('mongoose');
-var db = mongoose.connect("mongodb+srv://maeng2418:!groovy365@revelup-kuppk.mongodb.net/test?retryWrites=true&w=majority", { useNewUrlParser: true });
+var db = mongoose.connect("mongoDB_URI", { useNewUrlParser: true });
 var Schema = mongoose.Schema;
 
 var Post = new Schema({
@@ -168,8 +168,8 @@ router.post('/book', function(req, res, next) {
     port: 465,
     secure: true, 
     auth: {
-        user : 'rlaaudtjd8@gmail.com',
-        pass : 'codename21'
+        user : 'email@gmail.com',
+        pass : 'password'
     }
 });
 
